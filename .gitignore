@@ -28,6 +28,8 @@ Obj/
 angular-pwa-web-app/obj/
 angular-pwa-web-app/Obj/
 idea/
+angular-pwa-web-app/ClientApp/.angular/
+angular-pwa-web-app/ClientApp/node_modules/
 
 # Visual Studio 2015 cache/options directory
 .vs/
