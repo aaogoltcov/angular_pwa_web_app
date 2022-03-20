@@ -1,0 +1,24 @@
+<h1 id="tableLabel">JsonPlaceHolder API Test</h1>
+
+<p>This component demonstrates fetching data from the https://jsonplaceholder.typicode.com.</p>
+
+<p *ngIf="!jsonData"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="jsonData">
+  <thead>
+  <tr>
+    <th>User ID</th>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Completed</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let json of jsonData">
+    <td>{{ json.userId }}</td>
+    <td>{{ json.id }}</td>
+    <td>{{ json.title }}</td>
+    <td>{{ json.body }}</td>
+  </tr>
+  </tbody>
+</table>
